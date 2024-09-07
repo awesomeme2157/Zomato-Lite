@@ -77,3 +77,5 @@ fs.createReadStream("zomato.csv")
   .on("end", () => {
     console.log("CSV file successfully processed");
   });
+
+module.exports = Restaurant;

@@ -1,15 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { NotFound } from "./components/NotFound";
 import { Home } from "./components/Home";
+import RestoDetail from "./pages/RestoDetail";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
+          <Route path="/api/:Id" element={<RestoDetail />} />
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </>
